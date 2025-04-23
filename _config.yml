@@ -1,7 +1,9 @@
-title: "Affiliates"
-email: wowthemesnet@gmail.com
+title: Jackey's Blog
+email: jackey.phuong@gmail.com
+description: A modern blog built with Jekyll and GitHub Pages
+url: "https://ltphuong.github.io/"
+baseurl: ""
 timezone: UTC
-baseurl: "/affiliates-jekyll-theme"
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
@@ -21,6 +23,8 @@ sass:
   sass_dir: _sass
   style: :compressed
 ganalytics: UA-113961478-1
+theme: affiliates-jekyll-theme
+remote_theme: raviriley/agency-jekyll-theme
 
 # Authors
 authors:
