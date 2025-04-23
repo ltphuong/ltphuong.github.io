@@ -1,7 +1,8 @@
 title: "Affiliates"
 email: wowthemesnet@gmail.com
 timezone: UTC
-baseurl: "/affiliates-jekyll-theme"
+url: "https://ltphuong.github.io"
+baseurl: ""
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
@@ -21,6 +22,7 @@ sass:
   sass_dir: _sass
   style: :compressed
 ganalytics: UA-113961478-1
+remote_theme: raviriley/agency-jekyll-theme
 
 # Authors
 authors:
@@ -54,3 +56,4 @@ plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-archives
+- jekyll-remote-theme
