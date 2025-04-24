@@ -119,6 +119,19 @@ small, .small {
     height: 20px;
     margin-left: 15px;
 }
+.navbar-nav .nav-link:hover {
+  background-color: #f8f9fa;
+  color: #000 !important;   
+  border-radius: 0.25rem;    
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #e3f2fd;
+  color: #000 !important;
+}
+.navbar-nav .nav-link,
+.dropdown-menu .dropdown-item {
+  transition: background-color 0.3s ease;
+}
 
 /* Sidebar
 ================================================== */
