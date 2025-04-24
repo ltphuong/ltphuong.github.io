@@ -7,18 +7,12 @@ topmenu:
 - title: About
   url: "about/"
 
-- title: Contact
-  url: "contact/"
-
 
 # Footer Menu
 footermenu:
 
 - title: Home
   url: ""
-
-- title: Privacy Policy
-  url: "privacy-policy/"
 
 - title: Contact
   url: "contact/"
