@@ -39,9 +39,9 @@ Mình viết blog này để:
 ## ☕ Ủng hộ tác giả một ly cafe?
 
 Tất cả nội dung mình chia sẻ đều là **miễn phí**. Nếu bạn muốn mời mình một ly cafe nhỏ nhỏ, có thể chuyển khoản qua **MoMo** cho mình nha.  
-<p align="center">
+<p>
   <a href="https://me.momo.vn/X5IouliqfBTzfdseU6TV" target="_blank">
-    <img src="/assets/img/momo-qr.png" alt="Momo QR Code" width="200">
+    <img src="/assets/images/momo-qr.png" alt="Momo QR Code" width="200">
   </a>
 </p>
 
