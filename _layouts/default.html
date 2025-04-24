@@ -53,14 +53,27 @@ gtag('config', '{{site.ganalytics}}');
           </button>
           
           <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto font-weight-bold d-flex align-items-center">
-              {% for item in site.data.menus.topmenu %}
-              <li class="nav-item">
-                <a class="nav-link px-3 {% if item.class %}{{item.class}}{% endif %}" href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" alt="{{item.title}}">{{item.title}}</a>
-              </li>
-              {% endfor %}
-            </ul>
-          </div>
+			  <ul class="navbar-nav ml-auto font-weight-bold d-flex align-items-center">
+				{% for item in site.data.menus.topmenu %}
+				  {% if item.subitems %}
+					<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown{{ forloop.index }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						{{ item.title }}
+					  </a>
+					  <div class="dropdown-menu" aria-labelledby="navbarDropdown{{ forloop.index }}">
+						{% for sub in item.subitems %}
+						  <a class="dropdown-item" href="{% unless sub.external %}{{ site.baseurl }}/{% endunless %}{{ sub.url }}">{{ sub.title }}</a>
+						{% endfor %}
+					  </div>
+					</li>
+				  {% else %}
+					<li class="nav-item">
+					  <a class="nav-link px-3 {% if item.class %}{{ item.class }}{% endif %}" href="{% unless item.external %}{{ site.baseurl }}/{% endunless %}{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
+					</li>
+				  {% endif %}
+				{% endfor %}
+			  </ul>
+			</div>
 
         </div>
       </nav>
