@@ -162,6 +162,13 @@ small, .small {
   border-color: #ddd;
 }
 
+#results-container {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid #ccc; /* Optional: style as needed */
+  border-radius: 0.25rem; /* Optional: for soft corners */
+}
+
 /* Pages
 ================================================== */
 .hero {
