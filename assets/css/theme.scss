@@ -163,14 +163,16 @@ small, .small {
 }
 
 #results-container {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
+  border: 1px solid #ccc;          
+  border-radius: 6px;              
+  padding: 5px 0;                  
+  list-style: none;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 #results-container li a {
-  color: #212529 !important; 
+  color: #000000 !important; 
   font-weight: 500; 
 }
 
@@ -659,4 +661,7 @@ span.navigation:before {
 .hover-opacity:hover {
     transition: all.3s;
     opacity:.8;
+}
+.text-muted {
+    color: #242628 !important;
 }
