@@ -163,10 +163,19 @@ small, .small {
 }
 
 #results-container {
+  border: none !important;
   outline: none !important;
   box-shadow: none !important;
-  border: 1px solid #ccc; /* Optional: style as needed */
-  border-radius: 0.25rem; /* Optional: for soft corners */
+}
+
+#results-container li a {
+  color: #212529 !important; /* Bootstrap's dark text */
+  font-weight: 500; /* Optional: makes it more visible */
+}
+
+#results-container li a:hover {
+  background-color: #f8f9fa; /* Light hover background */
+  color: #000 !important; /* Even darker on hover */
 }
 
 /* Pages
