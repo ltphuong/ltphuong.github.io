@@ -1,0 +1,13 @@
+---
+layout: none
+---
+[
+  {% assign posts = site.posts | where_exp: "post", "post.published != false" %}
+  {% for post in posts %}
+    {
+      "title": "{{ post.title | escape }}",
+      "url": "{{ post.url | relative_url }}",
+      "content": {{ post.content | strip_html | normalize_whitespace | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
