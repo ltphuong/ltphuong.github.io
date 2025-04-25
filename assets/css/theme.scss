@@ -163,9 +163,10 @@ small, .small {
 }
 
 #results-container {
-  border: none !important;
   outline: none !important;
   box-shadow: none !important;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
 }
 
 #results-container li a {
@@ -173,8 +174,8 @@ small, .small {
   font-weight: 500; 
 }
 
-#results-container li a:hover {
-  background-color: #f8f9fa;
+#results-container li:hover {
+  background-color: #e0ecff;
   color: #000 !important;
 }
 
