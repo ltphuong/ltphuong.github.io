@@ -124,11 +124,7 @@ small, .small {
   display: none;
   margin-top: 0;
   transition: all 0.3s ease;
-  position: absolute;
-}
-
-.navbar-nav {
-  position: static;
+  position: absolute !important;
 }
 
 .nav-item.dropdown:hover{
