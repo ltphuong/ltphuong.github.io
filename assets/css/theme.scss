@@ -120,7 +120,13 @@ small, .small {
     margin-left: 15px;
 }
 
-.nav-item.dropdown:hover{
+.dropdown-menu {
+  display: none;
+  margin-top: 0;
+  transition: all 0.3s ease;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
 
