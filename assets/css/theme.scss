@@ -127,7 +127,7 @@ small, .small {
   position: absolute;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
+.nav-item.dropdown:hover{
   display: block;
 }
 
@@ -143,6 +143,7 @@ small, .small {
 .navbar-nav .nav-link,
 .dropdown-menu .dropdown-item {
   transition: background-color 0.3s ease;
+  position: absolute;
 }
 
 /* Sidebar
