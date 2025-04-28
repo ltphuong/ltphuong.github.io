@@ -178,6 +178,64 @@ small, .small {
   color: #000 !important;
 }
 
+.category-widget {
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.category-widget .widget-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  margin-bottom: 10px;
+}
+
+.category-list li a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #333;
+  padding: 5px 8px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.category-list li a:hover {
+  background: #e0e0e0;
+}
+
+.category-name {
+  flex-grow: 1;
+}
+
+.category-count {
+  color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .category-widget {
+    padding: 0.8rem;
+  }
+
+  .category-list li a {
+    font-size: 0.95rem;
+    padding: 4px 6px;
+  }
+}
+
+
 /* Pages
 ================================================== */
 .hero {
