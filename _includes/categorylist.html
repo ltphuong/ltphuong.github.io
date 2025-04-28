@@ -1,5 +1,4 @@
 <div class="widget category-widget">
-  <h5 class="widget-title">Categories</h5>
   <ul class="category-list">
     {% assign categories = site.posts | map: "categories" | flatten | uniq | sort %}
     {% for category in categories %}
@@ -10,7 +9,7 @@
         {% endif %}
       {% endfor %}
       <li>
-        <a href="{{ site.baseurl }}/categories/{{ category | slugify }}/">
+        <a href="{{ site.baseurl }}/categories/#{{ category | slugify }}/">
           <span class="category-name">{{ category }}</span>
           <span class="category-count">({{ count }})</span>
         </a>
