@@ -1,55 +1,21 @@
 ---
 layout: page
+title: "API Testing"
 permalink: "/api-testing/"
 ---
 
-<!-- Home Intro
-================================================== -->
-{% if page.url == "/" %} 
-<div class="rounded mb-5 hero">
-  <div class="row align-items-center justify-content-between">
-    <div class="col-md-6">
-      <h1 class="font-weight-bold mb-4 serif-font">Let me share you how to become a professional software tester.</h1>
-      <p class="lead mb-4">My name is Phuong, and I'm excited to share insights from my 10+ years of hands-on experience in automation testing—covering tools, best practices, and real-world project challenges.</p>
-    </div>
-    <div class="col-md-6 text-right pl-0 pl-lg-4">
-      <img class="intro" height="500" src="{{site.baseurl}}/assets/images/intro.svg">      
-    </div>
-  </div>
-</div>
-{% endif %}
+<h1>API Testing Articles</h1>
 
-<!-- Featured
-================================================== -->
-<section class="row">
-  {% for post in site.api-testing %}
-      {% if post.featured == true %}
-          <div class="col-md-4 mb-5">
-          {% include postbox.html %}
-          </div>
-      {% endif %}
-  {% endfor %}
-  </div>
-</section>
-
-<!-- Posts List with Sidebar (except featured)
-================================================== -->
 <section class="row">
   <div class="col-sm-8">
     <div class="row">
-      {% for post in paginator.posts %}
-      {% unless post.featured == true %}
-      <div class="col-md-6 mb-5">
-        {% include postbox.html %}
-      </div>
-      {% endunless %}
+      {% for post in site.posts %}
+        {% if post.categories contains "api-testing" %}
+          <div class="col-md-6 mb-5">
+            {% include postbox.html post=post %}
+          </div>
+        {% endif %}
       {% endfor %}
-    </div>
-    <!-- Pagination -->
-    <div class="bottompagination">
-      <span class="navigation" role="navigation">
-          {% include pagination.html %}
-      </span>
     </div>
   </div>
   <div class="col-sm-4">
