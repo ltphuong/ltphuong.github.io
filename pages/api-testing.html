@@ -23,8 +23,9 @@ permalink: "/api-testing/"
 <!-- Featured
 ================================================== -->
 <section class="row">
-  {% for post in site.pages.api-testing %}
-      {% if post.featured == true %}
+  {% assign api_pages = site.pages | where_exp: "page", "page.path contains 'api-testing'" %}
+  {% for post in api_pages %}
+    {% if post.featured == true %}
           <div class="col-md-4 mb-5">
           {% include postbox.html %}
           </div>
