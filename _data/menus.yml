@@ -13,6 +13,21 @@ topmenu:
       url: "java-selenium/"
     - title: Katalon WebUI
       url: "katalon-webui/"
+     
+- title: Coding
+  url: "#"
+    - title: Lập trình Java
+      url: "lap-trinh-java/"
+
+- title: Api Testing
+  url: "api-testing/"
+
+- title: Testing Knowledge
+  url: "#"
+    - title: Manual Testing
+      url: "manual-testing/"
+    - title: Git
+      url: "git/"
       
 - title: About
   url: "about/"
