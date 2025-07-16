@@ -20,14 +20,7 @@ topmenu:
       url: lap-trinh-java/
 
 - title: Api Testing
-  url: "api-testing/"
-
-- title: Testing Knowledge
-  url: "#"
-    - title: Manual Testing
-      url: manual-testing/
-    - title: Git
-      url: git/
+  url: api-testing/
       
 - title: About
   url: "about/"
