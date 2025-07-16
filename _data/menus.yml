@@ -8,19 +8,11 @@ topmenu:
   url: "#"
   subitems:
     - title: XPATH
-      url: xpath/
+      url: "xpath/"
     - title: Java Selenium
-      url: java-selenium/
+      url: "java-selenium/"
     - title: Katalon WebUI
-      url: katalon-webui/
-    
-- title: Coding
-  url: "#"
-    - title: Lập trình Java
-      url: lap-trinh-java/
-
-- title: Api Testing
-  url: api-testing/
+      url: "katalon-webui/"
       
 - title: About
   url: "about/"
