@@ -1,10 +1,11 @@
 ---
-layout: page
+layout: default
 title: "API Testing"
 permalink: "/api-testing/"
 ---
 
-<!-- Hero Section -->
+<!-- Hero Section
+================================================== -->
 <div class="rounded mb-5 hero">
   <div class="row align-items-center justify-content-between">
     <div class="col-md-6">
@@ -19,13 +20,35 @@ permalink: "/api-testing/"
   </div>
 </div>
 
-<!-- Posts Grid -->
+<!-- Featured
+================================================== -->
 <section class="row">
   {% for post in site.posts %}
-    {% if post.categories contains "api-testing" %}
-      <div class="col-md-4 mb-5">
-        {% include postbox.html post=post %}
-      </div>
-    {% endif %}
+      {% if post.featured == true and post.categories contains "api-testing" %}
+          <div class="col-md-4 mb-5">
+          {% include postbox.html post=post %}
+          </div>
+      {% endif %}
   {% endfor %}
+</section>
+
+<!-- Posts List (except featured)
+================================================== -->
+<section class="row">
+  <div class="col-sm-8">
+    <div class="row">
+      {% for post in site.posts %}
+        {% unless post.featured == true %}
+          {% if post.categories contains "api-testing" %}
+            <div class="col-md-6 mb-5">
+              {% include postbox.html post=post %}
+            </div>
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="col-sm-4">
+    {% include sidebar.html %}
+  </div>
 </section>
