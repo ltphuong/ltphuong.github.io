@@ -19,6 +19,9 @@ topmenu:
   subitems:
     - title: Lập trình Java
       url: "lap-trinh-java/"
+    - title: Lập trình Typescript
+      url: "lap-trinh-typescript/"
+
 
 - title: Api Testing
   url: "api-testing/"
