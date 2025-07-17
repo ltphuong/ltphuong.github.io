@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  "GIỚI THIỆU"
-author: sal
 categories: typescript
-image: assets/images/2.jpg
+image: assets/images/Introduction.png
 ---
 
 # 🚀 GIỚI THIỆU SERIES BLOG
@@ -42,23 +41,12 @@ Bạn nghe nói Playwright hỗ trợ rất mạnh TypeScript, nhưng lại chư
 ✅ Có ví dụ thực tế áp dụng cho test  
 ✅ Ưu tiên giải thích từ góc nhìn của Automation QA
 
----
-
-## 🧰 Những kiến thức học xong sẽ dùng ngay trong Playwright:
-
-| TypeScript       | Dùng để làm gì trong Automation Test?               |
-|------------------|-----------------------------------------------------|
-| interface       | Tạo cấu trúc dữ liệu cho test data, API response    |
-| enum           | Quản lý trạng thái, vai trò, page URLs, selectors    |
-| class          | Tạo Page Object rõ ràng, dễ tái sử dụng              |
-| async/await    | Viết step test đồng bộ, tránh callback hell          |
-| import/export  | Tách file rõ ràng, chia module test                  |
 
 ---
 # 📚 Danh sách các bài viết trong SERIES: Học TypeScript từ con số 0
 
 ## 🟩 Phần 1: Giới thiệu & Cơ bản
-- [TS01] TypeScript là gì? Tại sao nên học? ✅
+- [TS01] TypeScript là gì? Tại sao nên học?
 - [TS02] Hướng dẫn cài đặt môi trường TypeScript
 - [TS03] Viết file TypeScript đầu tiên với tsc
 - [TS04] Giải thích tsconfig.json cơ bản

@@ -1,0 +1,52 @@
+---
+layout: default
+title: "Xpath"
+permalink: "/xpath/"
+---
+
+<!-- Hero Section
+================================================== -->
+<div class="rounded mb-5 hero">
+  <div class="row align-items-center justify-content-between">
+    <div class="col-md-6">
+       <h1 class="font-weight-bold mb-4 serif-font">Let me share you how to become a professional software tester.</h1>
+      <p class="lead mb-4">My name is Phuong, and I'm excited to share insights from my 10+ years of hands-on experience in automation testing—covering tools, best practices, and real-world project challenges.</p>
+    </div>
+    <div class="col-md-6 text-right pl-0 pl-lg-4">
+      <img class="intro" height="500" src="{{site.baseurl}}/assets/images/intro.svg">      
+    </div>
+  </div>
+</div>
+
+<!-- Featured
+================================================== -->
+<section class="row">
+  {% for post in site.posts %}
+      {% if post.featured == true and post.categories contains "xpath" %}
+          <div class="col-md-4 mb-5">
+          {% include postbox.html post=post %}
+          </div>
+      {% endif %}
+  {% endfor %}
+</section>
+
+<!-- Posts List (except featured)
+================================================== -->
+<section class="row">
+  <div class="col-sm-8">
+    <div class="row">
+      {% for post in site.posts %}
+        {% unless post.featured == true %}
+          {% if post.categories contains "xpath" %}
+            <div class="col-md-6 mb-5">
+              {% include postbox.html post=post %}
+            </div>
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="col-sm-4">
+    {% include sidebar.html %}
+  </div>
+</section>
