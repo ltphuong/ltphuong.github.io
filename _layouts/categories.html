@@ -4,6 +4,9 @@ layout: default
 
 <h2 class="mb-4">Posts in category "{{ page.category }}"</h2>
 
+<p>Debug: page.category = "{{ page.category }}"</p>
+<p>Debug: site.categories[{{ page.category }}] count = {{ site.categories[page.category] | size }}</p>
+
 <div class="row">
   {% assign posts_in_category = site.categories[page.category] %}
   {% for post in posts_in_category %}
