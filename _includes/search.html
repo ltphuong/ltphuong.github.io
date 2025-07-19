@@ -1,15 +1,6 @@
 <div class="position-relative">
 	<input type="text" id="search-input" placeholder="Search posts..." class="form-control">
 	<ul id="results-container" class="dropdown-menu show w-100" style="max-height: 300px; overflow-y: auto; position: absolute; top: 100%; z-index: 1000;">
-	  {% assign titles = "" | split: "" %}
-	  {% for post in site.posts %}
-		{% unless titles contains post.title %}
-		  {% assign titles = titles | push: post.title %}
-		  <li>
-			<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-		  </li>
-		{% endunless %}
-	  {% endfor %}
 	</ul>
 
 </div>
