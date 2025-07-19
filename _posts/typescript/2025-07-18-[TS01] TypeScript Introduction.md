@@ -6,8 +6,6 @@ permalink: /lap-trinh-typescript/ts01-typescript-la-gi/
 image: assets/images/typescript/1.What-is-TypeScript.png
 ---
 
-# TS01 - TypeScript là gì? Tại sao nên học?
-
 ## 🎯 Mục tiêu bài học
 
 Giúp bạn hiểu:
