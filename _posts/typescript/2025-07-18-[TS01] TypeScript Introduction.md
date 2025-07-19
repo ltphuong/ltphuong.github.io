@@ -1,12 +1,12 @@
 ---
-title: "\[TS01] TypeScript là gì? Tại sao nên học?"
 layout: post
+title: "TS01 - TypeScript là gì? Tại sao nên học?"
 categories: typescript
-permalink: /typescript/ts01-typescript-la-gi/
+permalink: /lap-trinh-typescript/ts01-typescript-la-gi/
 image: assets/images/typescript/1.What-is-TypeScript.png
 ---
 
-# \[TS01] TypeScript là gì? Tại sao nên học?
+# TS01 - TypeScript là gì? Tại sao nên học?
 
 ## 🎯 Mục tiêu bài học
 

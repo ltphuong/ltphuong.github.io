@@ -3,6 +3,7 @@ layout: post
 title:  "Giới Thiệu"
 categories: typescript
 image: assets/images/Introduction.png
+permalink: /typescript/introduction/
 ---
 
 ## **Học TypeScript Từ Con Số 0 – Dành Cho Automation Tester**
