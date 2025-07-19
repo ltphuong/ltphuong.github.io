@@ -1,6 +1,5 @@
 ---
 layout: post
-title:  "GIỚI THIỆU"
 categories: typescript
 image: assets/images/Introduction.png
 ---
